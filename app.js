@@ -20,7 +20,8 @@ app.get("/logOut",function(req,res){
     res.send("LogOut")
 })
 app.get("/",function(req,res){
-    res.render("index",{pagetitle:"library",arr:[{link:"/books",title:"Books"},{link:"/author",title:"Author"},{link:"/books/add",title:"New Book"},{link:"/login",title:"Login"},{link:"/LogOut",title:"LogOut"}]})
+    res.send("hello")
+ //   res.render("index",{pagetitle:"library",arr:[{link:"/books",title:"Books"},{link:"/author",title:"Author"},{link:"/books/add",title:"New Book"},{link:"/login",title:"Login"},{link:"/LogOut",title:"LogOut"}]})
     //res.sendfile(__dirname+"/src/views/index.html")
 })
 
